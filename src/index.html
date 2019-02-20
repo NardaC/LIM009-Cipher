@@ -10,13 +10,42 @@
     <div class="encabezado">
       <img src="img/encabezado-codificador.png" alt="">
     </div>
-    <div id="root">
-      <h1>Bienvenidos!</h1>
-      <p>En esta pagina podras codificar y decodificar tu mensajes! <br>no suena Increible!, ps si!utilizaremos el Cifrado Cesar, <br>que consiste en mover cada letra un determinado numero de espacios en el alfabeto.</p>
-    </div>
-    <div>
-      <button type="button" onclick="btnComenzar()">COMENZAR</button>
-    </div>
+
+    <section id="home">
+        <div id="root">
+          <h1>Bienvenidos!</h1>
+          <p>En esta pagina podras codificar y decodificar tu mensajes! <br>no suena Increible!, ps si!utilizaremos el Cifrado Cesar, <br>que consiste en mover cada letra un determinado<br> numero de espacios en el alfabeto, la cual llamaremos clave.</p>
+        </div>
+      <div>
+        <button type="button" onclick="btnComenzar()">COMENZAR</button>
+      </div>
+    </section>
+
+    <section id="escribirTexto">
+      <h3>Ingrese el mensaje</h3>
+      <input id= "mensaje" type="text" maxlength="500">
+      <div>
+       <form>
+          <label for="name">Clave:</label>
+          <input id="clave" type="text">
+       </form>
+      </div>
+      <div>
+       <button type="button" onclick="btnCifrar">CIFRAR</button>
+       <button type="button" onclick="btnDecifrar">DECIFRAR</button>
+      </div>
+    </section>
+
+    <section id="msjCifrado">
+      <p>Mensaje cifrado</p>
+    </section>
+
+    <section id="msjCifrado">
+        <p>Mensaje decifrado</p>
+    </section>
+
+
+
     <script src="cipher.js"></script>
     <script src="index.js"></script>
   </body>
