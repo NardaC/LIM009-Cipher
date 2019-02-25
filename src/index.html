@@ -23,11 +23,11 @@
 
     <section id="escribirMsj">
       <h3>Ingrese el mensaje</h3>
-      <input id= "mensaje" type="text" maxlength="500">
+      <textarea id="msj"> </textarea>
       <div>
        <form>
           <label for="name">Clave:</label>
-          <input id="clave" type="text">
+          <input id="clave" type="number" max="26" min="1"/>
        </form>
       </div>
       <div>
@@ -36,16 +36,14 @@
       </div>
     </section>
 
-    <section id="msjCifrado">
-      <p>Mensaje cifrado</p>
+    <section id="msjFinalCifrado">
+      <textarea id="msjCifrado" class="textBox" autocomplete="off">
+      </textarea>
     </section>
 
-    <section id="msjDecifrado">
-        <p>Mensaje decifrado</p>
+    <section id="msjFinalDecifrado">
+      <textarea id="msjDecifrado" class="textBox" autocomplete="off"></textarea>
     </section>
-
-
-
     <script src="cipher.js"></script>
     <script src="index.js"></script>
   </body>
