@@ -8,20 +8,26 @@
 
   <body>
     <div class="encabezado">
-      <img src="LIM009-Cipher/img/encabezado-codificador.png" alt="">
+      <img src="https://i.postimg.cc/15BR05tz/aa.png" alt="">
     </div>
 
     <section id="home">
         <div id="root">
           <h1>Bienvenidos!</h1>
-          <p>En esta pagina podras codificar y decodificar tu mensajes! <br>no suena Increible!, ps si!utilizaremos el Cifrado Cesar, <br>que consiste en mover cada letra un determinado<br> numero de espacios en el alfabeto, la cual llamaremos clave.</p>
+          <p>Tus secretos mejor guardados! </p>
+          <p>En esta pagina podras codificar y decodificar el contenido de tu diario! <br>no suena Increible!, ps sí!; utilizaremos el Cifrado Cesar, <br>que consiste en mover cada letra un determinado<br> numero de espacios en el alfabeto, la cual llamaremos clave.</p>
         </div>
+        <form class="myForm" action="index.html" method="post" id="firtsName">
+          <h2>¿Cuál es tu nombre</h2>
+          <input type="text" name="validarNombre" value="" id="txt">
+        </form>
       <div>
         <button type="button" id="btnComenzar">COMENZAR</button>
       </div>
     </section>
 
     <section id="escribirMsj">
+        <h1>Hola! <span id="nombreUsuario"></span></h1>
       <h3>Ingrese el mensaje</h3>
       <textarea id="msj"> </textarea>
       <div>
@@ -37,12 +43,11 @@
     </section>
 
     <section id="msjFinalCifrado">
-      <textarea id="msjCifrado" class="textBox" autocomplete="off">
-      </textarea>
+      <textarea id="msjCifrado" class="textBox"></textarea>
     </section>
 
     <section id="msjFinalDecifrado">
-      <textarea id="msjDecifrado" class="textBox" autocomplete="off"></textarea>
+      <textarea id="msjDecifrado" class="textBox"></textarea>
     </section>
     <script src="cipher.js"></script>
     <script src="index.js"></script>

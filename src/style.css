@@ -1,1 +1,10 @@
-/* Acá va tu código */
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script|Handlee|Open+Sans:600i');
+
+.encabezado{
+    text-align: center;
+}
+body{
+    font-family:'Handlee', cursive;
+    font-size: 20px;
+    background: url("https://www.decoandkids.com/4315-large_default/papel-pintado-cactus-grises-lilipinso.jpg");
+}
