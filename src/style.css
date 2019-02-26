@@ -7,4 +7,12 @@ body{
     font-family:'Handlee', cursive;
     font-size: 20px;
     background: url("https://www.decoandkids.com/4315-large_default/papel-pintado-cactus-grises-lilipinso.jpg");
+    
+}
+#box1{
+    text-align: center;
+    border: 10px solid #5A9A65;
+    width: 640px;
+    margin: 0 auto;
+    color: #881C67;
 }

@@ -21,17 +21,17 @@ document.getElementById("btnComenzar").addEventListener("click",() => {
 
 //creo 2 vriables  para los botones de cifrar y decifrar
 let cifrar = document.getElementById('btnCifrar');
-let decifrar = document.getElementById('btnDecifrar');
+//let decifrar = document.getElementById('btnDecifrar');
 //ante el evento de hacer clic cifra y decifra
-cifrar.addEventListener('click',encode());
-decifrar.addEventListener('click',decode());
+cifrar.addEventListener('click', encode);
+//decifrar.addEventListener('click', decode());
 
 //creo una funcion para dentro de esta llamar a la función cipher.encode y pasarle argumentos
-function encode () {
+function encode() {
     const string = document.getElementById('msj').value;
-    const offset = parseInt(document.getElementById('clave')).value;
+    const offset = document.getElementById('clave').value;
     const resultado = cipher.encode(offset,string);
-
+    document.getElementById("msjCifrado").style.display="block";
     document.getElementById('msjCifrado').innerHTML = resultado;
 }
 
