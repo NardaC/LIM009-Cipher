@@ -14,5 +14,13 @@ body{
     border: 10px solid #5A9A65;
     width: 640px;
     margin: 0 auto;
-    color: #881C67;
+    color: #5A9A65;
+}
+#form{
+    text-align: center;
+    color:#881C67;
+}
+#escribirMsj{
+    text-align: center;
+    color:#881C67;
 }
