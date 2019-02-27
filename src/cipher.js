@@ -34,11 +34,13 @@ window.cipher = {
       if(65 <= string.charCodeAt(i) && string.charCodeAt(i) <= 90){
         //obtener el ascci del string
         let ascci = (string.charCodeAt(i) - 65 - offset2) % 26 + 65;
+
         //obtener e imprimir el mensaje cifrado obtenido del ascci
         let nuevoMsj = String.fromCharCode(ascci);
         resultado += nuevoMsj;
       }else if (97<= string.charCodeAt(i) && string.charCodeAt(i) <= 122){ //para minusculas
         let ascci = (string.charCodeAt(i) - 97 - offset2) % 26 + 97;
+
         let nuevoMsj = String.fromCharCode(ascci);
         resultado += nuevoMsj;
       }else if (string.charCodeAt(i) === 32) {resultado += " "};
