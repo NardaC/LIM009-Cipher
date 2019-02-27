@@ -17,12 +17,12 @@
           <p>En esta página podrás codificar y decodificar el contenido de tu diario! <br>no suena Increible!, ps sí!; utilizaremos el Cifrado Cesar, <br>que consiste en mover cada letra un determinado<br> numero de espacios en el alfabeto, la cual llamaremos clave.</p>
         </div>
         <div id= form>
-          <form class="myForm" action="index.html" id="firtsName">
+          <form class="myForm" id="firtsName">
             <h2>¿Cuál es tu nombre?</h2>
             <input type="text" name="validarNombre" value="" id="txt">
           </form>
         <div>
-          <button type="button" id="btnComenzar">COMENZAR</button>
+          <button class="botoncitos" type="button" id="btnComenzar">COMENZAR</button>
         </div>
         </div>
     </section>
@@ -30,7 +30,7 @@
     <section id="escribirMsj">
         <h1>Hola! <span id="nombreUsuario"></span></h1>
       <h3>Ingrese el mensaje</h3>
-      <textarea id="msj"> </textarea>
+      <textarea class="estilotextarea" id="msj"> </textarea>
       <div>
        <form>
           <label for="name">Clave:</label>
@@ -38,8 +38,8 @@
        </form>
       </div>
       <div>
-       <button type="button" id="btnCifrar">CIFRAR</button>
-       <button type="button" id="btnDecifrar">DECIFRAR</button>
+       <button class="botoncitos" type="button" id="btnCifrar">CIFRAR</button>
+       <button class="botoncitos" type="button" id="btnDecifrar">DECIFRAR</button>
       </div>
     </section>
 
@@ -48,7 +48,7 @@
     </section>
 
     <section id="msjFinalDecifrado">
-      <textarea id="msjDecifrado" class="textBox"></textarea>
+        <div id="msjDecifrado" class="textBox"></div>
     </section>
     <script src="cipher.js"></script>
     <script src="index.js"></script>
