@@ -1,9 +1,9 @@
 //ocultar las demas paginas y mostrar solo la primera seccion home al cargar
 window.onload = () => {
     document.getElementById("escribirMsj").style.display="none";
-    document.getElementById("msjCifrado").style.display="none";
-    document.getElementById("msjDecifrado").style.display="none";  
-}
+    document.getElementById("msjFinalCifrado").style.display="none";
+    document.getElementById("msjFinalDecifrado").style.display="none";  
+
 
 //al hacer click al boton comenzar se esconde la seccion home y muestra las demas
 document.getElementById("btnComenzar").addEventListener("click",() => {
@@ -13,8 +13,8 @@ document.getElementById("btnComenzar").addEventListener("click",() => {
       } else {
         document.getElementById("nombreUsuario").innerHTML = nombre;
         document.getElementById("home").style.display="none";
-        document.getElementById("msjCifrado").style.display="none";
-        document.getElementById("msjDecifrado").style.display="none";
+        document.getElementById("msjFinalCifrado").style.display="none";
+        document.getElementById("msjFinalDecifrado").style.display="none";
         document.getElementById("escribirMsj").style.display="block";
       }
 });
@@ -26,21 +26,28 @@ let decifrar = document.getElementById('btnDecifrar');
 cifrar.addEventListener('click', encode);
 decifrar.addEventListener('click', decode);
 
+}
 //creo una funcion para dentro de esta llamar a la función cipher.encode y pasarle argumentos
 function encode() {
     const string = document.getElementById('msj').value;
     const offset = document.getElementById('clave').value;
     const resultado = cipher.encode(offset,string);
-    document.getElementById("msjCifrado").style.display="block";
-    document.getElementById('msjCifrado').innerHTML = resultado;
+    if (offset == ""){
+        alert("Olvidaste ingresar la CLAVE");
+      } else{
+    document.getElementById("msjFinalCifrado").style.display="block";
+    document.getElementById('msjFinalCifrado').innerHTML = resultado;
+    document.getElementById("msjFinalDecifrado").style.display="none";
+}
 }
 
 function decode() {
     const string = document.getElementById('msj').value;
     const offset = document.getElementById('clave').value;
     const resultado = cipher.decode(offset,string);
-    document.getElementById("msjCifrado").style.display="block";
-    document.getElementById('msjCifrado').innerHTML = resultado;
+    document.getElementById("msjFinalDecifrado").style.display="block";
+    document.getElementById('msjFinalDecifrado').innerHTML = resultado;
+    document.getElementById("msjFinalCifrado").style.display="none";
 }
 
 

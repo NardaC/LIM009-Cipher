@@ -14,7 +14,7 @@
     <section id="home">
         <div id="box1">
           <h1>Tus secretos mejor guardados!!</h1>
-          <p>En esta página podrás codificar y decodificar el contenido de tu diario! <br>no suena Increible!, ps sí!; utilizaremos el Cifrado Cesar, <br>que consiste en mover cada letra un determinado<br> número de espacios en el alfabeto, la cual llamaremos clave.</p>
+          <p>En esta página podrás codificar y decodificar mensajes! no suena Increible?, pues sí!;<br> utilizaremos el Cifrado Cesar, que consiste en mover cada letra un determinado número de espacios en el alfabeto, la cual llamaremos CLAVE.<br> Es decir, si escribo la letra "a" y establezco una clave 3 (podría ser cualquier numero)se cifrará en "d"</p>
         </div>
         <div id= "form">
           <form class="myForm" id="firtsName">
@@ -33,7 +33,7 @@
       <textarea class="estilotextarea" id="msj"> </textarea>
       <div>
        <form>
-          <label for="name">Clave:</label>
+          <label for="name">CLAVE:</label>
           <input id="clave" type="number" max="26" min="1"/>
        </form>
       </div>
@@ -44,11 +44,11 @@
     </section>
 
     <section id="msjFinalCifrado">
-      <div id="msjCifrado"></div>
+      <textarea></textarea>
     </section>
 
     <section id="msjFinalDecifrado">
-        <div id="msjDecifrado" class="textBox"></div>
+    </textarea class="textBox"></textarea>
     </section>
     <script src="cipher.js"></script>
     <script src="index.js"></script>
