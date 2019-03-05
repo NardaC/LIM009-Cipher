@@ -14,7 +14,7 @@ h1{
     text-align: center;
     margin-top: 12px;
     margin-bottom: 20px;
-    color: #331C7E;
+    color: #654210;
     font-size: 28px;
 }
 
@@ -34,12 +34,12 @@ p{
     padding:13px;
     width: 1000px;
     margin: 0 auto;
-    color: #348156;
+    color: #132464;
     font-size: 20px;
 }
 #instrucciones{
     text-align: center;
-    color: #348156;
+    color: #132464;
     font-size: 15px;
     width: 1000px;
     margin: 0 auto;
@@ -57,21 +57,24 @@ p{
 }
 #hola{
     text-align: center;
-    color: #252197;
+    color: #654210;
     font-size: 40px;
     margin-top: 2px;  
 }
 
 #ingresaTuMsj, #ingresaNumero, .desplazamiento{
     text-align: left;
-    margin-left: 440px;
-    color: #331C7E;
+    margin-left: 370px;
+    color: #881C67;
+}
+#num{
+    color: #132464
 }
 
 #clave{
     width:50px;
     height:20px;
-    border: 2px solid #990000;
+    border: 2px solid #132464;
     font-family:'Handlee', cursive; 
     font-size: 22px;
     border-radius: 5px;
@@ -119,7 +122,7 @@ p{
   #msj {
       width:700px;
       height:100px;
-      border: 2px solid #990000; 
+      border: 2px solid #132464; 
       font-family:'Handlee', cursive; 
       font-size: 20px;
       border-radius: 5px;
