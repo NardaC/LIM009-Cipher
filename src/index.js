@@ -45,9 +45,13 @@ function decode() {
     const string = document.getElementById('msj').value;
     const offset = document.getElementById('clave').value;
     const resultado = cipher.decode(offset,string);
+    if (offset == ""){
+        alert("Olvidaste ingresar la CLAVE");
+      } else{
     document.getElementById("msjFinalDecifrado").style.display="block";
     document.getElementById('msjFinalDecifrado').innerHTML = resultado;
     document.getElementById("msjFinalCifrado").style.display="none";
+}
 }
 
 document.getElementById("btnLimpiar").addEventListener("click",() => {
