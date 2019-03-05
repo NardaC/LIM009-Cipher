@@ -18,10 +18,15 @@ window.cipher = {
         let nuevoMsj = String.fromCharCode(ascci);
         resultado += nuevoMsj;
       }
-      else if(string.charCodeAt(i)===32){
+      else if(string.charCodeAt(i)===32){//para espacio
         resultado += " "
       }
-    } //para espacio
+      else if (33<=string.charCodeAt(i) && string.charCodeAt(i) <=59){
+        let ascci = (string.charCodeAt(i) - 33 - 0) % 26 + 33;
+        let nuevoMsj = String.fromCharCode(ascci);
+        resultado += nuevoMsj;
+      }
+    } 
   
   //resultado += nuevoMsj;
   return resultado; 
@@ -37,19 +42,24 @@ window.cipher = {
       if(65 <= string.charCodeAt(i) && string.charCodeAt(i) <= 90){
         //obtener el ascci del string
         let ascci = (string.charCodeAt(i) - 13 - offset2) % 26 + 65;
-
         //obtener e imprimir el mensaje cifrado obtenido del ascci
         let nuevoMsj = String.fromCharCode(ascci);
         resultado += nuevoMsj;
+
       }else if (97<= string.charCodeAt(i) && string.charCodeAt(i) <= 122){ //para minusculas
         let ascci = (string.charCodeAt(i) - 45 - offset2) % 26 + 97;
-
         let nuevoMsj = String.fromCharCode(ascci);
         resultado += nuevoMsj;
       }
-      else if(string.charCodeAt(i)===32){
+      else if(string.charCodeAt(i)===32){//para espacio
         resultado += " "
-      }//para espacio
+      }
+      else { 33<=string.charCodeAt(i) && string.charCodeAt(i) <=59
+        let ascci = (string.charCodeAt(i) - 33 - 0) % 26 + 33;
+        let nuevoMsj = String.fromCharCode(ascci);
+        resultado += nuevoMsj;
+      }
+
     } 
   
   //resultado += nuevoMsj;

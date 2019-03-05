@@ -36,7 +36,7 @@ function encode() {
         alert("Olvidaste ingresar la CLAVE");
       } else{
     document.getElementById("msjFinalCifrado").style.display="block";
-    document.getElementById('msjFinalCifrado').innerHTML = resultado;
+    document.getElementById("msjFinalCifrado").innerHTML = resultado;
     document.getElementById("msjFinalDecifrado").style.display="none";
 }
 }
@@ -50,7 +50,12 @@ function decode() {
     document.getElementById("msjFinalCifrado").style.display="none";
 }
 
-
+document.getElementById("btnLimpiar").addEventListener("click",() => {
+    document.getElementById("msj").value = "";
+    document.getElementById("msjFinalCifrado").innerHTML = "";
+    document.getElementById("msjFinalDecifrado").innerHTML = "";
+    document.getElementById("clave").value ="";
+});
 
 
 

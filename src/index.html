@@ -8,47 +8,49 @@
 
   <body>
     <div class="encabezado">
-      <img src="https://i.postimg.cc/15BR05tz/aa.png" alt="">
+      <img src="https://i.postimg.cc/hP9SjTxt/secret-Page.png" alt="">
     </div>
-
     <section id="home">
         <div id="box1">
-          <h1>Tus secretos mejor guardados!!</h1>
-          <p>En esta página podrás codificar y decodificar mensajes! no suena Increible?, pues sí!;<br> utilizaremos el Cifrado Cesar, que consiste en mover cada letra un determinado número de espacios en el alfabeto, la cual llamaremos CLAVE.<br> Es decir, si escribo la letra "a" y establezco una clave 3 (podría ser cualquier numero)se cifrará en "d"</p>
+          <h1>Ten la libertad de expresar, sólo con quien tú quieras, tus deseos, sueños y esos secretos que tienes guardados</h1>
+          <p> En la vida todos tenemos tal ves un secreto inconfesable, un arrepentimiento irreversible, sueños que parecen inalcanzables o algun amor inolvidable, todo aquello que en algún momento queremos sacar y decirlo de algun modo.<br>
+              Si éste es tu caso, ¡ésta plataforma es ideal para ti! Aquí puedes cifrar y descifrar tus mensajes y enviárselo a la persona que elijas como confidente.</p>
         </div>
         <div id= "form">
           <form class="myForm" id="firtsName">
-            <h2>¿Cuál es tu nombre?</h2>
+            <p id='nombre'>¿Cuál es tu nombre?</p>
             <input type="text" name="validarNombre" value="" id="txt">
           </form>
         <div>
-          <button class="botoncitos" type="button" id="btnComenzar">COMENZAR</button>
+          <button type="button" id="btnComenzar">COMENZAR</button>
         </div>
         </div>
     </section>
-
     <section id="escribirMsj">
-        <h1>Hola! <span id="nombreUsuario"></span></h1>
-      <h3>Ingrese el mensaje</h3>
-      <textarea class="estilotextarea" id="msj"> </textarea>
+      <label id="hola" >Hola! <span id="nombreUsuario"></span></label>
+      <div id="instrucciones">
+        <h3>Utilizaremos el Cifrado Cesar, que consiste en mover cada letra un determinado número de espacios en el alfabeto, la cuál llamaremos CLAVE. Es decir, si escribo la letra "a" y establezco una clave 3 se cifrará en "d".</h3>
+      </div>
+      <p id='ingresaTuMsj'>Ingresa tu mensaje</p>
+      <textarea id="msj"> </textarea>
       <div>
        <form>
-          <label for="name">CLAVE:</label>
-          <input id="clave" type="number" max="26" min="1"/>
+          <p id='ingresaNumero'>Ingresa un número de 1 al 26</p>
+          <div class="desplazamiento">
+            <label for="name">CLAVE:</label>
+            <input id="clave" type="number" max="26" min="1"/>
+          </div>
        </form>
       </div>
       <div>
        <button class="botoncitos" type="button" id="btnCifrar">CIFRAR</button>
        <button class="botoncitos" type="button" id="btnDecifrar">DESCIFRAR</button>
+       <button class="botoncitos" type="button" id="btnLimpiar">LIMPIAR</button>
       </div>
     </section>
-
     <section id="msjFinalCifrado">
-      <textarea></textarea>
     </section>
-
     <section id="msjFinalDecifrado">
-    </textarea class="textBox"></textarea>
     </section>
     <script src="cipher.js"></script>
     <script src="index.js"></script>
