@@ -19,6 +19,6 @@ Esta aplicacion web cifrará tus secretos mejor guardados que podrás compartir 
 
 Podrás escribir tus mensajes o secretos a cifrar, luego colocarás una clave que compartiras con tu confidente y cifrarás tu mensaje.
 
-#### interfaz
+#### Interfaz
 
-el tema de la aplicación es muy calmado y amigable. 
+La interfaz tiene una temática que refleja un ambiente real, mostrando varios elementos comunes en un escritorio, esto hace que la aplicación tenga un diseño amigable y conocido por el público objetivo.
