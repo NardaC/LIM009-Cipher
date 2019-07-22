@@ -1,8 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Dancing+Script|Handlee|Open+Sans:600i');
 
-.encabezado{
-    text-align: center;
-    margin-bottom: 1px;
+img{
+    width: 100%;
 }
 body{
     font-family:'Handlee', cursive;
@@ -15,7 +14,8 @@ h1{
     margin-top: 12px;
     margin-bottom: 20px;
     color: #654210;
-    font-size: 28px;
+    font-size: 100%;
+    width: 100%;
 }
 
 p{
@@ -25,23 +25,21 @@ p{
 #nombre{
     text-align: center;
     color:#331C7E;
-    font-size: 25px;
+    font-size: 100%;
     margin-bottom:10px;
     margin-top: 15px;
 }
 #box1{
     text-align: justify;
     padding:13px;
-    width: 1000px;
     margin: 0 auto;
     color: #132464;
-    font-size: 20px;
+    font-size: 100%;
 }
 #instrucciones{
     text-align: center;
     color: #132464;
     font-size: 15px;
-    width: 1000px;
     margin: 0 auto;
 }
 #form{
@@ -58,13 +56,12 @@ p{
 #hola{
     text-align: center;
     color: #654210;
-    font-size: 40px;
+    font-size: 100%;
     margin-top: 2px;  
 }
 
 #ingresaTuMsj, #ingresaNumero, .desplazamiento{
-    text-align: left;
-    margin-left: 370px;
+    text-align: center;
     color: #881C67;
 }
 #num{
@@ -110,18 +107,17 @@ p{
     font-family:'Handlee', cursive;
     text-decoration: none;
     padding: 8px;
-    font-weight: 400;
+    font-weight: 400px;
     font-size: 15px;
     color: #ffffff;
     background-color: #881C67;
     border-radius: 5px;
     margin-top: 30px;
-    margin-left: 70px;
   }
 
   #msj {
-      width:700px;
-      height:100px;
+      width:80%;
+      height:20%;
       border: 2px solid #132464; 
       font-family:'Handlee', cursive; 
       font-size: 20px;
@@ -157,4 +153,5 @@ p{
     margin-bottom: 100px;
     border-radius: 5px;
 }
+
   
